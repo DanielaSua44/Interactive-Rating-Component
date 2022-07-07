@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+     <script>
+        function getData() {
+
+            if (location.search.length > 0) {
+                dataPassed = unescape(location.search.substring(1))
+
+                tempArray1 = dataPassed // split the string at character & and create an array of values
+
+             // get value at array index i (name=value)
+                 // split the string at character =
+                    document.f1.elements["text"].value = tempArray1 // assign the value
+                }
+
+            
+
+        }
+
+        // add onload="getData()" to the opening BODY tag
+
+        //
+    </script>
+</head>
+
+<body onload="getData()">
+        <div class="container">
+            <form id="main__form" name="f1"  >
+                <img src="./images/illustration-thank-you.svg" alt="Frontend Mentor logo" class="img2">
+                <input type="text" name="text" id="text">
+                <h2 id="title" style="text-align:center">Thank you!</h2>
+                <p class="paragraph">We appreciate you taking the time to give a rating. If you ever need more support,
+                    don’t hesitate to get in touch!</p>
+                <a href="index.html" id="button">Back to home</a>
+            </form>
+        </div>
+</body>
+
+</html>
